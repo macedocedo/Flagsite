@@ -58,7 +58,7 @@
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
+  box-sizing: content-box;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -7408,7 +7408,7 @@ textarea.form-control-lg {
 }
 
 .p-0 {
-  padding: 0 !important;
+  padding: 3px !important;
 }
 
 .p-1 {
@@ -11399,7 +11399,6 @@ p.lead {
 .dev-icons {
   font-size: 3rem;
 }
-
 section.resume-section {
   display: flex;
   align-items: center;
@@ -11415,7 +11414,8 @@ section.resume-section .resume-section-content {
 
 @media (min-width: 768px) {
   section.resume-section {
-    min-height: 100vh;
+    padding-left: 3rem;
+    padding-right: 3rem;
   }
 }
 @media (min-width: 992px) {
